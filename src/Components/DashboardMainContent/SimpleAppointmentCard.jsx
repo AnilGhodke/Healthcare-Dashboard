@@ -1,36 +1,4 @@
-// import React from 'react';
-
-// const SimpleAppointmentCard = ({ title, time, icon, doctor, status }) => {
-//   return (
-//     <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg shadow-md">
-//       {/* Icon */}
-//       <div className="flex-shrink-0 h-10 w-10 bg-blue-100 rounded-full flex items-center justify-center text-xl">
-//         {icon}
-//       </div>
-
-//       {/* Content */}
-//       <div className="flex-1">
-//         <h4 className="font-semibold text-sm">{title}</h4>
-//         {doctor && <p className="text-gray-600 text-xs">{doctor}</p>}
-//         <p className="text-gray-500 text-xs">{time}</p>
-
-//         {/* Status Badge */}
-//         <span className={`inline-block mt-1 px-2 py-0.5 text-xs rounded 
-//           ${status === 'Upcoming' ? 'bg-green-100 text-green-700' :
-//             status === 'Completed' ? 'bg-gray-200 text-gray-600' :
-//             status === 'Cancelled' ? 'bg-red-100 text-red-600' :
-//             'bg-yellow-100 text-yellow-700'}`}>
-//           {status}
-//         </span>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default SimpleAppointmentCard;
-
-
-import React from 'react';
+/import React from 'react';
 
 const SimpleAppointmentCard = ({ title, time, doctor, status, icon, appointmentType }) => {
   // Badge color based on status

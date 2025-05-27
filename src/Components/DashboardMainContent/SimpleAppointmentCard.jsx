@@ -1,4 +1,4 @@
-/import React from 'react';
+import React from 'react';
 
 const SimpleAppointmentCard = ({ title, time, doctor, status, icon, appointmentType }) => {
   // Badge color based on status

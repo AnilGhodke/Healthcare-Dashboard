@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Header from './components/Header/Header';
-import Sidebar from './components/Sidebar/Sidebar';
+import Header from './Components/Header/Header';
+import Sidebar from './Components/Sidebar/Sidebar';
 import './index.css';
 import DashboardMainContent from './Components/DashboardMainContent/DashboardMainContent';
 import CalendarView from './Components/DashboardMainContent/CalendarView';
@@ -14,7 +14,7 @@ function App() {
     <div className="flex h-screen font-sans bg-[#f5f9ff]">
       <Sidebar setActiveTab={setActiveTab} activeTab={activeTab} />
       <div className="flex flex-col flex-1 overflow-y-auto">
-        <Header />
+        <Header/>
         {activeTab === 'dashboard' && <DashboardMainContent />}
         {activeTab === 'calendar' && <CalendarView />}
         {activeTab === 'history' && <HealthStatusCards/>}
